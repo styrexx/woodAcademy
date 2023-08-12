@@ -91,10 +91,6 @@ img {
   .landing .navbar .collapse .navbar-nav .nav-item .nav-link:before {
     display: none;
   }
-  .landing .navbar .collapse .navbar-nav {
-    max-width: 500px;
-    margin: auto;
-  }
 }
 .landing .landing-body {
   position: relative;
