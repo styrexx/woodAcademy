@@ -1,0 +1,84 @@
+/* General Rule */
+:root {
+  --sect-col: #16191f;
+  --sect2-col: #222630;
+
+  --main-col: #ff7607;
+  --sec-col: #32363f;
+  --trans: 0.3s;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+/* General Rule */
+.landing {
+  background-image: url(../assets/will-suddreth-o54RjF-C7xo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+}
+.landing::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(transparent 10%, var(--sect-col));
+}
+.landing .navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: rgb(204, 204, 204);
+}
+.landing .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+}
+.landing .navbar .collapse .navbar-nav .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: white;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: var(--trans);
+}
+.landing .navbar .collapse .navbar-nav .nav-item .nav-link:hover::before {
+  opacity: 1;
+}
+.landing .landing-body {
+  position: relative;
+  top: 35%;
+}
+.landing .landing-body h1 {
+  max-width: 600px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.landing .landing-body a {
+  background-color: var(--main-col);
+  color: white;
+  font-weight: bold;
+  transition: var(--trans);
+}
+.landing .landing-body a:hover {
+  opacity: 0.75;
+}
