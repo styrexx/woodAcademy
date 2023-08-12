@@ -43,6 +43,20 @@ img {
   left: 0;
   background: linear-gradient(transparent 10%, var(--sect-col));
 }
+.landing .navbar .navbar-toggler {
+  color: white;
+}
+.landing .navbar .navbar-toggler:is(focus, :hover) {
+  box-shadow: none;
+}
+.landing .navbar .navbar-toggler[aria-expanded="true"] .fa-bars,
+.landing .navbar .navbar-toggler[aria-expanded="false"] .fa-xmark {
+  display: none;
+}
+.landing .navbar .navbar-toggler[aria-expanded="false"] .fa-bars,
+.landing .navbar .navbar-toggler[aria-expanded="true"] .fa-xmark {
+  display: block;
+}
 .landing .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: rgb(204, 204, 204);
 }
@@ -64,9 +78,27 @@ img {
 .landing .navbar .collapse .navbar-nav .nav-item .nav-link:hover::before {
   opacity: 1;
 }
+@media (max-width: 996px) {
+  .landing .navbar .navbar-nav {
+    background-color: white;
+  }
+  .landing .navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: black;
+  }
+  .landing .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(0, 0, 0, 0.45);
+  }
+  .landing .navbar .collapse .navbar-nav .nav-item .nav-link:before {
+    display: none;
+  }
+  .landing .navbar .collapse .navbar-nav {
+    max-width: 500px;
+    margin: auto;
+  }
+}
 .landing .landing-body {
   position: relative;
-  top: 35%;
+  top: 30%;
 }
 .landing .landing-body h1 {
   max-width: 600px;
@@ -81,4 +113,28 @@ img {
 }
 .landing .landing-body a:hover {
   opacity: 0.75;
+}
+.landing .scroll-bg {
+  position: absolute;
+  right: 130px;
+  bottom: 0;
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+}
+.landing .scroll-bg svg {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  background-color: rgba(77, 77, 77, 0.45);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--trans);
+}
+.landing .scroll-bg svg:hover {
+  background-color: rgba(77, 77, 77, 1);
 }
