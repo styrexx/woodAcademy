@@ -78,7 +78,7 @@ img {
 .landing .navbar .collapse .navbar-nav .nav-item .nav-link:hover::before {
   opacity: 1;
 }
-@media (max-width: 996px) {
+@media (max-width: 992px) {
   .landing .navbar .navbar-nav {
     background-color: white;
   }
@@ -133,4 +133,9 @@ img {
 }
 .landing .scroll-bg svg:hover {
   background-color: rgba(77, 77, 77, 1);
+}
+@media (max-width: 652px) {
+  .landing .scroll-bg {
+    right: 30px;
+  }
 }
