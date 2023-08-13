@@ -225,7 +225,6 @@ img {
   padding: 50px;
   position: relative;
 }
-
 .service .back-memb::before,
 .service .back::before {
   content: "";
@@ -242,4 +241,33 @@ img {
 }
 .service .back-memb > p {
   max-width: 500px;
+}
+
+/* qa */
+.qa {
+  background-color: var(--sect2-col);
+  color: white;
+}
+.qa .quest-ans .sub-qa .ans {
+  display: none;
+}
+.qa .quest-ans .sub-qa.active .ans {
+  display: block;
+}
+.qa .quest-ans .sub-qa .quest span svg {
+  transition: var(--trans);
+}
+.qa .quest-ans .sub-qa.active .quest span svg {
+  transform: rotate(180deg);
+}
+.qa .quest-ans .sub-qa {
+  background-color: var(--sec-col);
+  color: white;
+  transition: var(--trans);
+}
+.qa .quest-ans .sub-qa:hover {
+  background-color: var(--sect-col);
+}
+.qa .quest-ans .sub-qa {
+  cursor: pointer;
 }
