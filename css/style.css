@@ -207,6 +207,7 @@ img {
   background: url(../assets/nico-smit-HjFUevA2g1k-unsplash.jpg);
 }
 .service .img-res,
+.service .img-memb,
 .service .img-clas {
   background-size: cover;
   background-position: 100px bottom;
@@ -214,10 +215,18 @@ img {
   height: 250px;
   z-index: 1;
 }
+.service .img-memb {
+  background: url(../assets/jared-brashier-OR3FqpLyPdI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.service .back-memb,
 .service .back {
   padding: 50px;
   position: relative;
 }
+
+.service .back-memb::before,
 .service .back::before {
   content: "";
   position: absolute;
@@ -229,5 +238,8 @@ img {
   z-index: -1;
 }
 .service .back > p {
-  width: 300px;
+  max-width: 300px;
+}
+.service .back-memb > p {
+  max-width: 500px;
 }
