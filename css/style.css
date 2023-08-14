@@ -49,6 +49,10 @@ img {
   left: 0;
   background: linear-gradient(transparent 10%, var(--sect-col));
 }
+.landing .navbar .navbar-brand {
+  color: white;
+  font-weight: 500;
+}
 .landing .navbar .navbar-toggler {
   color: white;
 }
@@ -259,4 +263,44 @@ img {
 }
 .register .reg_text {
   max-width: 550px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: var(--sect2-col);
+}
+@media (min-width: 996px) {
+  .footer .info {
+    max-width: 350px;
+  }
+}
+.footer .info h3 {
+  color: var(--main-col);
+}
+.footer .info .icons svg {
+  transition: var(--trans);
+}
+.footer .info .icons svg:hover {
+  opacity: 0.7;
+}
+.footer .leftsid ul {
+  list-style: none;
+}
+.footer .leftsid li a {
+  text-decoration: none;
+  transition: var(--trans);
+  padding-bottom: 5px;
+  display: block;
+}
+.footer .leftsid li a:hover {
+  opacity: 0.7;
+}
+.sub-footer {
+  background-color: var(--sect2-col);
+}
+.sub-footer .link {
+  transition: var(--trans);
+}
+.sub-footer .link:hover {
+  opacity: 0.6;
 }
