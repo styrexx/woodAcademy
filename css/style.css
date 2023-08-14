@@ -116,35 +116,6 @@ img {
 .landing .landing-body a:hover {
   opacity: 0.75;
 }
-.landing .scroll-bg {
-  position: absolute;
-  right: 130px;
-  bottom: 0;
-  display: flex;
-  gap: 10px;
-  z-index: 1;
-}
-.landing .scroll-bg svg {
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  color: white;
-  background-color: rgba(77, 77, 77, 0.45);
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: var(--trans);
-}
-.landing .scroll-bg svg:hover {
-  background-color: rgba(77, 77, 77, 1);
-}
-@media (max-width: 652px) {
-  .landing .scroll-bg {
-    right: 30px;
-  }
-}
 /* End Lending */
 
 /* Services */
@@ -265,9 +236,27 @@ img {
   color: white;
   transition: var(--trans);
 }
+.qa .quest-ans .sub-qa.active,
 .qa .quest-ans .sub-qa:hover {
   background-color: var(--sect-col);
 }
 .qa .quest-ans .sub-qa {
   cursor: pointer;
+}
+
+/* Registering */
+.register {
+  background-color: var(--sect-col);
+}
+.register .main-btn {
+  background-color: var(--main-col);
+  color: white;
+  font-weight: bold;
+  transition: var(--trans);
+}
+.register .main-btn:hover {
+  opacity: 0.7;
+}
+.register .reg_text {
+  max-width: 550px;
 }
